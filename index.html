@@ -4,8 +4,26 @@
   <meta charset="UTF-8">
   <title>我们的小组——四人足迹</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Bootstrap 样式 -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- 1. 引入 Leaflet 样式 -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""
+  />
+  <style>
+    /* 确保地图容器有高度 */
+    #map {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 30px;
+    }
+  </style>
 </head>
 <body>
   <header class="text-center py-4 bg-primary text-white">
@@ -13,12 +31,15 @@
     <p>点击下方成员头像／姓名，访问各自的个人主页</p>
   </header>
 
+  <!-- 2. 地图容器 -->
+  <div id="map"></div>
+
   <main class="container my-5">
     <div class="row">
       <!-- 成员卡片 -->
       <div class="col-md-3 text-center mb-4">
         <a href="member1.html" class="text-decoration-none text-dark">
-          <img src="images/member1.jpg" alt="成员A" class="rounded-circle mb-2" width="120">
+          <img src="images/member1.png" alt="HHR" class="rounded-circle mb-2" width="120">
           <h4>黄卉然</h4>
         </a>
       </div>
@@ -47,6 +68,41 @@
     &copy; 2025 小组名
   </footer>
 
+  <!-- Leaflet 脚本 -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha512-+dZbZ4xQ9bC/Op0EtrB50N6YjmxsrFDbYi+7P1ta+Vilhl1x0LRcAK8RcPpEVl7eMxy7rG3wJX0vKQskvHf0Iw=="
+    crossorigin=""
+  ></script>
+
+  <!-- 3. 初始化地图脚本 -->
+  <script>
+    // 创建地图并设置中心点（这里以武汉 30.5,114.3 为例）及缩放级别
+    var map = L.map('map').setView([30.5, 114.3], 10);
+
+    // 加载 OpenStreetMap 底图
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // 示例：添加一个标记
+    L.marker([30.5, 114.3])
+      .addTo(map)
+      .bindPopup('这是武汉示例标记')
+      .openPopup();
+
+    // TODO: 如果你已经在 GeoServer 上发布了“足迹”WMS 图层，
+    // 可以通过 L.tileLayer.wms(...) 将其叠加进来：
+    //
+    // var footprints = L.tileLayer.wms(
+    //   'http://你的GeoServer地址:8080/geoserver/工作空间/wms', {
+    //     layers: '工作空间:图层名',
+    //     format: 'image/png',
+    //     transparent: true
+    // }).addTo(map);
+  </script>
+
+  <!-- 你自己的脚本 -->
   <script src="js/custom.js"></script>
 </body>
 </html>
