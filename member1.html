@@ -133,7 +133,7 @@
                         <p>你好！我是黄卉然，现就读于武汉大学大学地理信息科学专业，对 GIS 可视化与 Web 前端开发充满热情。</p>
                         <p>我的技术栈包括 Java、Python和Android开发。业余爱好数字绘画和游戏制作，喜欢把地图与艺术结合创作独特的数据可视化作品。</p>
                         <!-- 下载按钮 -->
-                        <a href="uploads/download_07.jpg" class="sim-btn btn-hover-new" data-text="下载我制作的地图"><span>下载我制作的地图</span></a>
+                        <a href="uploads/download.pdf" class="sim-btn btn-hover-new" data-text="下载我制作的地图"><span>下载我制作的地图</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -224,83 +224,114 @@
     </div><!-- end section -->
 
 
-	
-	<div id="portfolio" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
-            </div><!-- end title -->
-			
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Web Development</button>
-						<button data-filter=".gal_b">Creative Design</button>
-						<button data-filter=".gal_c">Graphic Design</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
+    <div id="portfolio" class="section lb">
+    <div class="container">
+        <!-- 区块标题 -->
+        <div class="section-title text-left">
+        <h3>我的作品</h3>
+        <p>这里展示我个人在不同领域的项目与创作。</p>
+        </div><!-- end title -->
+
+        <!-- 分类按钮 -->
+        <div class="gallery-menu row">
+        <div class="col-md-12">
+            <div class="button-group filter-button-group text-left">
+            <button class="active" data-filter="*">全部</button>
+            <button data-filter=".gal_gis">GIS 可视化</button>
+            <button data-filter=".gal_web">桌面游戏开发</button>
+            <button data-filter=".gal_app">Android 应用</button>
+            <button data-filter=".gal_art">数字插画</button>
+            </div>
+        </div>
+        </div>
+
+    <!-- 画廊列表 -->
+    <div class="gallery-list row">
+        <!-- GIS 可视化-->
+        <div class="col-md-4 col-sm-6 gallery-grid gal_gis">
+            <div class="gallery-single fix">
+            <img src="uploads/my_gis_project-01.png" class="img-fluid" alt="GIS 可视化项目-1">
+            <div class="img-overlay">
+                <a href="uploads/my_gis_project-01.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                <i class="fa fa-map fa-lg"></i>
+                </a>
+            </div>
+            </div>
+<!--          
+            <div class="gallery-single fix">
+            <img src="uploads/my_gis_project-02.png" class="img-fluid" alt="GIS 可视化项目-2">
+            <div class="img-overlay">
+                <a href="uploads/my_gis_project-02.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                <i class="fa fa-map fa-lg"></i>
+                </a>
+            </div>
+            </div>
+-->  
+        </div>
+
+        <!-- 桌面游戏开发 -->
+        <div class="col-md-4 col-sm-6 gallery-grid gal_web">
+            <div class="gallery-single fix">
+            <img src="uploads/my_game_project-01.png" class="img-fluid" alt="桌面游戏开发-1">
+            <div class="img-overlay">
+                <a href="uploads/my_game_project-01.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                <i class="fa fa-code fa-lg"></i>
+                </a>
+            </div>
+            </div>
+            <div class="gallery-single fix">
+            <img src="uploads/my_game_project-02.png" class="img-fluid" alt="桌面游戏开发-2">
+            <div class="img-overlay">
+                <a href="uploads/my_game_project-02.png" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                <i class="fa fa-code fa-lg"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- Android 应用-->
+        <div class="col-md-4 col-sm-6 gallery-grid gal_app">
+            <!-- 第一张 -->
+            <div class="gallery-single fix mb-3">
+                <img src="uploads/my_android_app-01.png" class="img-fluid" alt="Android 应用项目 1">
+                <div class="img-overlay">
+                <a href="uploads/my_android_app-01.png"
+                    data-rel="prettyPhoto[gal]"
+                    class="hoverbutton global-radius">
+                    <i class="fa fa-android fa-lg"></i>
+                </a>
+                </div>
+            </div>
+            <!-- 第二张 -->
+            <div class="gallery-single fix">
+                <img src="uploads/my_android_app-02.png" class="img-fluid" alt="Android 应用项目 2">
+                <div class="img-overlay">
+                <a href="uploads/my_android_app-02.png"
+                    data-rel="prettyPhoto[gal]"
+                    class="hoverbutton global-radius">
+                    <i class="fa fa-android fa-lg"></i>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 数字插画-->
+        <div class="col-md-4 col-sm-6 gallery-grid gal_art">
+            <div class="gallery-single fix">
+            <img src="uploads/my_illustration-01.jpg" class="img-fluid" alt="数字插画作品">
+            <div class="img-overlay">
+                <a href="uploads/my_illustration-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                <i class="fa fa-paint-brush fa-lg"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+
+        <!-- end gallery-list -->
+    </div><!-- end container -->
+    </div><!-- end portfolio section -->
+
+
 	
 	 <div id="testimonials" class="section wb">
         <div class="container">
@@ -545,6 +576,5 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
-
 </body>
 </html>
