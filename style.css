@@ -22,7 +22,6 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
-
 body {
     color: #999999;
     font-size: 14px;
@@ -831,8 +830,27 @@ xclip
 .desc {
     padding: 30px;
     position: relative;
-    background: #000;
-    border: 1px solid #111111;
+    background: #9a585f;
+    border: 1px solid #9a585f;
+    height: 200px;
+}
+
+.perIntro {
+    padding: 10px 10px; /* 增加内边距，让按钮更大 */
+    font-size: 18px; /* 增加字体大小 */
+    border-radius: 0px; /* 添加圆角，让按钮更美观 */
+    background-color: #9a585f; /* 设置按钮背景颜色 */
+    color: white; /* 设置按钮文字颜色 */
+    border: none; /* 移除边框 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+.perIntro:hover {
+    background-color: #b3b4af; /* 鼠标悬停时的背景颜色 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* 鼠标悬停时的阴影效果 */
+    transform: scale(1.25); /* 鼠标悬停时稍微放大 */
+    color: #000000; /* 鼠标悬停时的文字颜色 */
 }
 
 .testi-meta {
