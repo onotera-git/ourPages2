@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'PixelFont';
+  src: url('../fonts/pixel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'STZHONGS';
+  src: url('../fonts/STZHONGS.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    /* 只对常用汉字（CJK 统一汉字）生效 */
+  unicode-range: U+4E00-9FFF, U+3400-4DBF, U+F900-FAFF;
+}
+
+@font-face {
+  font-family: 'TIMES';
+  src: url('../fonts/TIMES.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+    /* 只对拉丁文、数字、标点生效 */
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, 
+                 U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, 
+                 U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, 
+                 U+FEFF, U+FFFD;
+}
+
+html, body{
+  font-family: 'STZHONGS', 'TIMES', monospace;
+}
+
+
+#m1_home .heading h1 {
+  font-size: 4rem; 
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+#m1_home .heading p {
+  font-size: 1.5rem; 
+  line-height: 1.6;
+  margin: 0.5em 0 1em;
+  letter-spacing: 0.05em;
+}
+
+#m1_home .cd-headline.clip {
+  font-size: 2rem;
+  letter-spacing: 0.08em;  
+}
+
+/* 只缩放 gal_app 分类下的所有画廊图片到 40% 宽度 */
+.gallery-grid.gal_app .gallery-single img {
+  width: 40%;
+  height: auto;  /* 保持等比 */
+  display: block; /* 消除底部空隙 */
+  margin: 0 auto; /* 居中显示，如果需要 */
+}
+
+/* “关于我” 模块文字放大 */
+#about .message-box h2 {
+  font-size: 2.5rem;    /* 标题增大，比如原来可能是 38px，现在约等于 40px */
+  line-height: 1.2;
+}
+
+#about .message-box p {
+  font-size: 1.25rem;   /* 段落增大，如 20px 左右 */
+  line-height: 1.6;
+}
+
+/* 如果想同时调整按钮文字 */
+#about .message-box .sim-btn span {
+  font-size: 1rem;      /* 比如原来 14px，现在约等于 16px */
+}
