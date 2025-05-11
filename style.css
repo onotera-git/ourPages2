@@ -830,8 +830,8 @@ xclip
 .desc {
     padding: 30px;
     position: relative;
-    background: #9a585f;
-    border: 1px solid #9a585f;
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
     height: 200px;
 }
 
@@ -839,7 +839,7 @@ xclip
     padding: 10px 10px; /* 增加内边距，让按钮更大 */
     font-size: 18px; /* 增加字体大小 */
     border-radius: 0px; /* 添加圆角，让按钮更美观 */
-    background-color: #9a585f; /* 设置按钮背景颜色 */
+    background-color: #1f1f1f; /* 设置按钮背景颜色 */
     color: white; /* 设置按钮文字颜色 */
     border: none; /* 移除边框 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
@@ -2485,4 +2485,43 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* 放大 testimonial 区块标题 */
+.testimonial .desc h3 {
+  font-size: 1.5rem;   
+  line-height: 1.2;
+}
+
+/* 放大 testimonial 区块正文 */
+.testimonial .desc p.lead {
+  font-size: 1.1rem;   
+  line-height: 1.6;
+}
+
+/* 放大姓名和小标签 */
+.testi-meta h4 {
+  font-size: 1rem;   
+  margin-top: 1.5rem;
+}
+
+/* 放大“个人主页”按钮文字 */
+.perIntro {
+  font-size: 1.1rem;   
+}
+
+/* 1) 让 .testimonial 变成定位上下文 */
+.testimonial {
+  position: relative;
+  padding-bottom: 60px; /* 确保底部留出空间给绝对定位的按钮 */
+}
+
+/* 2) 将按钮容器绝对定位到右侧（红框位置）*/
+.testimonial .text {
+  position: absolute;
+  top: 65%;            /* 根据你的红框高度微调 */
+  right: 20px;         /* 距离右侧 20px */
+  transform: translateY(-50%); /* 垂直居中对齐 .testimonial 可视区域 */
+  margin: 0;           /* 去掉原来的 margin */
+  height: auto;        /* 让高度自适应 */
 }
